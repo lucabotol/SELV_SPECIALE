@@ -1,1 +1,2 @@
-In questa relazione si andrà ad esporre il procedimento ed i risultati relativi allo studio della componente di copertura nevosa nel versante trentino della Val de la Mare, durante il periodo estivo 2025.
+Appunti relativi al corso di Selvicoltura Speciale, tenuto dal Prof. Mario Pividori. 
+Il Corso di Studi è Scienze Forestali ed Ambientali, anno 2025-2026.
