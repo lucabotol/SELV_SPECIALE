@@ -1,0 +1,125 @@
+\section{Lezione 2} \hfill 25/02/2026\\
+La definizione più corretta di bosco per i forestali è: ``un ecosistema forestale atto a svolgere delle funzioni che possono cambiare nel tempo, a seconda dei cambiamenti della società e delle esigenze dell'uomo''.\\
+In questa definizione non ci sono riferimenti numerici dimensionali: ne deriva che qualsiasi popolamento di alberi può essere considerato un bosco.
+\paragraph{Definizione di selvicoltura} Esistono diverse definizioni di selvicoltura:
+\begin{enumerate}
+    \item per chi se la tira è la ``scienza che studia le tecniche di gestione del bosco'';
+    \item ``insieme delle scienze (botanica, dendrometria,...) per gestire un bosco, per ottenere un obiettivo colturale'';
+    \item ``o è l'arte di tagliare i boschi o è l'arte di farli crescere''.
+\end{enumerate}
+\subsection{Agricoltura e selvicoltura}
+La differenza principale tra l'agricoltura e la selvicoltura riguarda il tempo, di molto inferiore nel primo soggetto.\\
+La questione temporale porta con sè rischi ed incognite.\\
+In agricoltura il rischio è inferiore, e pertanto è possibile svolgere degli investimenti (non solo economici). Infatti, l'agricoltore ha la capacità (poichè se lo può permettere) di cambiare l'ambiente in cui la coltura si trova:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item se manca acqua è possibile fare irrigazione;
+        \item se c'è impermeabilità è possibile fare lavorazioni;
+        \item se c'è poca fertilità è possibile svolgere concimazioni;
+        \item se il numero di insetti è eccessivo si svolgono trattamenti.
+    \end{enumerate}
+\end{multicols}
+L'agricoltura in serra è il caso più estremo dei cambiamenti agronomici dell'ambiente, poichè è possibile cambiare la quantità di luce.\\
+In selvicoltura non è possibile svolgere modifiche all'ambiente, perchè l'investimento sarebbe eccessivo per il tempo di ritorno del ciclo. Le operazioni selvicolturali si basano sulla modifica della disponibilità della luce, eseguita mediante tagli di rinnovazione, di rinnovazione o di sfolli: ``l'unico strumento del selvicoltore è la motosega''.\\
+La concezione errata è che il bosco sia statico, ovvero che non faccia parte di un ciclo dinamico. Il selvicoltore va ad agire in un singolo attimo rispetto a tutta la traiettoria del bosco.
+\subsection{La traiettoria della foresta}
+È possibile conoscere la sequenza di fasi della successione ecologica di una qualsiasi foresta.\\
+\begin{tikzpicture}[
+    node distance = 0mm,
+    start chain = going right,
+    box/.style = {draw, fill=blue!10, rounded corners, inner sep=2pt, 
+                  on chain, anchor=west, font=\small}
+]
+
+% Disegna la linea centrale
+\draw[line width=2pt, gray!50, -latex] (0,0) -- (16,0);
+
+% Aggiungi i nodi (Anni ed Eventi)
+\foreach \x/\event in {0/0, 2/AB, 4/T, 6/EARB, 9/P, 11/D, 13/P2, 14.5/D2} {
+    \draw[fill=blue] (\x,0) circle (2pt); % Punto sulla linea
+    \node[above=5pt, box] at (\x,0) {\event}; % Testo sopra
+}
+\end{tikzpicture}\\
+Il suolo è la parte più superficiale della crosta terrestre, in cui si ha una componente biotica, abiotica e merobiotica (ovvero quello relativo alla nutrizione). Per potersi sviluppare, una foresta necessita di un suolo.\\
+Il non suolo è un suolo senza la componente organica (es. immediatamente dopo un'eruzione vulcanica, il letto di una frana, il letto di un fiume soggetto a piene frequenti).\\
+In riferimento alla successione temporale, si possono identificare una serie di sere:
+\begin{enumerate}
+    \item 0: avvenimento di un disturbo che rimuove tutto il substrato, lasciando solamente non suolo;
+    \item AB: il substrato senza materia organica viene popolato da alghe e batteri. Questi individui successivamente muoiono, aggiungendo sostanza organica al non suolo, che lentamente inizia a diventare un suolo;
+    \item T: compaiono specie terofite (ovvero che sopravvivono sottoforma di seme per lunghi periodi). Morendo, aggiungono sostanza organica al suolo.
+    \item EARB: compaiono le prime piante che riescono a colonizzare il territorio, ovvero erbe ed arbusti; anche loro morendo vanno ad arricchire il suolo. Il paesaggio è composto prettamente da steppe/praterie arbusti;
+    \item P: colonizzazione delle prime specie pioniere. Queste specie sono caratterizzate solitamente da:
+    \begin{itemize}
+        \item crescita rapida (per poter vincere la competizione con le erbe ed arbusti);
+        \item eliofile (poichè devono crescere velocemente);
+        \item accrescimento giovanile alto;
+        \item sviluppo molto rapido e vita breve (50-60 anni);
+        \item elevata capacità riproduttiva, mediante disseminazione anemocora (dovendo trasportare il seme distante, e non essendoci altri agenti di trasporto);
+        \item rustiche in sostanza organica;
+        \item poco esigenti d'acqua;
+        \item apparato radicale molto profondo, fittonante (essendo che i nutrienti e l'acqua si trovano in profondità). Inoltre, un suolo povero di sostanza organica è un suolo poco stabile, e la pianta necessità di radici profonde per trovare stabilità;
+        \item es. pioppi, salici, betulle, ontani;
+        \item ``le piante non misurano il tempo in anni, ma in divisioni cellulari''.
+    \end{itemize}
+Queste piante aggiungono sostanza organica al suolo, creando così un suolo ottimale per l'ingresso delle specie definitive.
+\item D: avviene l'ingresso delle specie definitive. Al contrario delle specie pioniere, le definitive sono:
+    \begin{itemize}
+        \item tolleranti l'ombra (sciafile), hanno una diversa strategia di rinnovazione. Le pioniere tendono a crescere più velocemente rispetto agli individui con cui sono in competizione; le sciafile riescono a svilupparsi con meno luce, poichè limitate dal piano superiore occupato da specie pioniere;
+        \item accrescimento giovanile più lento rispetto alle eliofile;
+        \item semi pesanti, con disseminazione zoocora o barocora;
+        \item apparato radicale fascicolato, poichè non c'è necessita di ancorarsi al suolo e nel suolo superficiale è presenta maggiore sostanza organica;
+        \item vita maggiormente lunga;
+        \item es. faggio, querce, abeti,...
+    \end{itemize}
+\end{enumerate}
+La successione presentata possiede delle limitazioni, derivanti da delle semplificazioni:
+\begin{enumerate}
+    \item non prende in considerazione i disturbi. La morte delle piante avviene solamente per la naturale senescenza dell'individuo. L'avvenimento di un disturbo può portare indietro la successione, a seconda dell'intensità dell'agente, facendo così iniziare nuovamente il ciclo. I disturbi non permettono al popolamento di arrivare alla condizione di climax (ovvero quella ``finale'');
+    \item le diverse sere possono avere durate completamente diverse. Per esempio, in ambiente temperato, le due sere iniziali possono avere una durata di 2-5 anni (o anche meno). La durata delle diverse sere varia in funzione delle condizioni bioclimatiche a delle specie che si sono adattate per quel dato luogo.
+\end{enumerate}
+È possibile che le condizioni ambientali non siano ottimali, facendo rendere il popolamento di pioniere stabili. Per es. non c'è abbastanza sostanza organica per permettere alla successione di avanzare.
+\subsection{Classificazione dei popolamenti in base ai disturbi}
+Classificazione ideata dal Prof. Del Favero, in base all'intensità dei disturbi.\\
+\begin{itemize}
+    \item A e B: sistemi poco perturbati;
+    \item C, D e E: sistemi perturbati;
+    \item F: sistemi di origine antropica (o antropizzati), ovvero creati e gestiti dall'uomo.
+\end{itemize}
+In particolare:
+\begin{enumerate}
+    \item A: normalmente sono boschi puri, composti da una sola specie (dominante). Es. peccete, faggete,...Sono boschi composti da specie definitive, normalmente normalmente dominate da specie leader;
+    \item B: sono boschi misti, solitamente composti da specie leader. Entra in gioco la valenza ecologica delle specie (a seconda di dove ci si trova). Es. boschi misti di abete rosso, abete bianco e faggio;
+    \item C: poco perturbati, dove avviene il cambio di specie. Il disturbo è raro e capita solitamente nei boschi di specie definitive: creandosi spazio, avviene la colonizzazione delle specie pioniere, con un successivo ritorno delle specie definitive;
+    \item D: disturbi forti e frequenti, senza cambio di specie. Il disturbo è talmente forte da distruggere il popolamento, ma non così tanto frequente da eliminare la presenza delle specie definitive;
+    \item E: primitivi, gli alberi sono ``bonsai'' per cause ambientali. Possono riguardare quasi tutte le specie, anche se le condizioni risultanti sono differenti;
+    \item F: rimboschimenti ed impianti artificiali.
+\end{enumerate}
+\subsection{Le domande del bosco}
+\subsubsection{Chi sei?}
+È la fotografia del bosco com'è oggi. È di difficile risposta, poichè il bosco si estende in 3 dimensioni.\\
+Al fine di rispondere in modo oggettivo a questa domanda, sono stati creati alcuni parametri descrittivi.\\
+\paragraph{Composizione}
+È quello che normalmente da il nome al bosco. Un popolamento può essere:
+\begin{itemize}
+    \item puro: una specie domina per almeno il 90\% del bosco (es. pecceta pura);
+    \item misto: la proporzione tra le specie è diversa (es. pecceta pura con larice).
+\end{itemize}
+\paragraph{Struttura}
+Rappresenta la distribuzione della piante sulla superficie. Può essere:
+\begin{enumerate}
+    \item verticale (vista frontale del bosco), che può essere:
+    \begin{itemize}
+        \item monoplana: è anche detta erroneamente coetanea, poichè gli individui possono avere età differenti;
+        \item biplana: le chiome sono distribuite in due piani verticali, ovvero il piano dominato ed il piano dominante;
+        \item stratificata: le chiome degli alberi occupano tutto il piano verticale (ovvero ci sono piante di diverse grandezze). Viene anche detta erroneamente disetanea: le piante possono avere la stessa età, ma condizioni stazionali differenti;
+        \item irregolare: ovvero i casi che non ricadono nei tre precedenti.
+    \end{itemize}
+    Una struttura biplana può essere osservata prima del taglio di sgombero nel trattamento a tagli successivi, oppure nel passaggio da un popolamento di specie pioniere ad uno di specie definitive.
+    \item orizzontale, anche detta tessitura (vista dall'alto del popolamento). In base alla distribuzione specifica, può essere fine o grossolana.
+\end{enumerate}
+\paragraph{Densità}
+Può essere valutato secondo diversi parametri (piante ad ettaro, area basimetrica, volume,...).\\
+Il numero di piante ad ettaro è un indicatore, ma non dice come è fatto un bosco
+\subsubsection{Da dove vieni?}
+\subsubsection{Dove stai andando?}
+\subsubsection{Dove voglio che vada?}
